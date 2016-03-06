@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".MainActivity">
+
+    <com.lib.hashtag.views.HashTagView
+        android:id="@+id/tag_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/hashtag_bg"
+        android:padding="5dp"
+        android:text="@string/lorem_ipsum"
+        android:textColor="@android:color/black"
+        android:textSize="20sp"
+        app:atColor="#ffff4444"
+        app:atFont="cartoon.ttf"
+        app:boldHashTag="true"
+        app:hashTagColor="#ff99cc00"
+        app:hashTagFont="burnstown.ttf"
+        app:italicAt="true"
+        app:trackAt="true"
+        app:trackHashTag="true"
+        app:underlineAt="true" />
+
+    <com.lib.hashtag.views.HashTagEditText
+        android:id="@+id/tag_edit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/hashtag_hint"
+        android:text="@string/lorem_ipsum"
+        android:textSize="20sp"
+        app:atColor="#ffff8800"
+        app:atFont="chlorinr.ttf"
+        app:boldAt="true"
+        app:fontName="snackercomic.ttf"
+        app:hashTagColor="#ffffff"
+        app:hashTagFont="ginga.ttf"
+        app:hashTagSize="1.2"
+        app:hastTagBackground="#ffaa66cc"
+        app:italicHashTag="true"
+        app:trackAt="true" />
+
+    <Button
+        android:id="@+id/btn_tags"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Get #Tags" />
+
+    <Button
+        android:id="@+id/btn_ats"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Get @" />
+</LinearLayout>
